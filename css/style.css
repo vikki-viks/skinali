@@ -4,7 +4,7 @@
 }
 
 .container {
-  min-width: 1170px;
+  max-width: 1170px;
   margin: auto;
 }
 
@@ -37,10 +37,6 @@
   min-height: 80px;
 }
 
-.navbar__menu-button {
-  margin-right: 30px;
-}
-
 .navbar__mobile, .navbar__landline {
   text-align: right;
 }
@@ -51,9 +47,12 @@
   font-family: "Proxima Nova Semibold", sans-serif;
   text-decoration: none;
   color: #262626;
+  margin-bottom: 5px;
 }
 
 .navbar__small-text {
+  text-decoration: none;
+  display: block;
   font-size: 14px;
   color: #7b7b79;
 }
@@ -107,4 +106,14 @@
 body {
   font-family: "Proxima Nova Light", sans-serif;
   color: #262626;
+}
+
+.button-o {
+  border: 2px solid #507fe1;
+  padding: 17px 22px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #507fe1;
+  background-color: #fff;
+  font-family: "Proxima Nova Semibold", sans-serif;
 }
