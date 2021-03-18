@@ -1,8 +1,11 @@
 .offer
     padding: 129px 0
     &-block
-        background-color: #fff
+        background: #fff url('../img/offer/form-bg.png') no-repeat center right
+        background-size: contain
+        box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1)
         padding: 80px
+        margin-top: -200px
     &__title
         font-size: 25px
         text-transform: uppercase
@@ -32,9 +35,36 @@
         border-right-width: 0px
         &:last-child
             border-right-width: 1px
-    
     &__button
         height: 80px
         width: 100%
 
+@media (max-width: 1199px)
+    .offer
+        &-block
+            background-position: center right -120px
+
+@media (max-width: 768px)
+    .offer
+        &-block
+            background: none
+            background-color: #fff
+            padding: 40px
+        &__title
+            font-size: 18px
+        &__subtitle
+            font-size: 16px
+        .form
+            &__row
+                flex-direction: column
+                &-checkbox
+                    flex-direction: row
+            &__group
+                flex-basis: 100%
+                width: 100%
+            &__input
+                margin-bottom: 20px
+
+            
+    
 
