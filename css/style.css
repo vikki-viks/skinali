@@ -197,6 +197,10 @@ body {
   color: #262626;
 }
 
+img {
+  max-width: 100%;
+}
+
 .section {
   padding: 100px 0;
 }
@@ -222,6 +226,7 @@ body {
 }
 
 .button {
+  text-transform: uppercase;
   font-family: "Proxima Nova Semibold", sans-serif;
   border: none;
   padding: 25px 45px;
@@ -502,10 +507,26 @@ body {
 
 .catalog-card__tag {
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 10px;
+  top: 10px;
+  padding: 10px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: rgba(80, 127, 225, 0.6);
 }
 
 .catalog-card__image {
   display: block;
+}
+
+@media (max-width: 1199px) {
+  .catalog-block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .catalog-card {
+    max-width: 470px;
+  }
 }
