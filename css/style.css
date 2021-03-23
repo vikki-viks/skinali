@@ -222,10 +222,12 @@ img {
   text-transform: uppercase;
   color: #507fe1;
   background-color: #fff;
+  text-decoration: none;
   font-family: "Proxima Nova Semibold", sans-serif;
 }
 
 .button {
+  text-decoration: none;
   text-transform: uppercase;
   font-family: "Proxima Nova Semibold", sans-serif;
   border: none;
@@ -470,6 +472,10 @@ img {
   }
 }
 
+.catalog {
+  background-color: #f5f6f8;
+}
+
 .catalog-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -520,6 +526,20 @@ img {
   display: block;
 }
 
+.catalog__link {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.catalog__link-more {
+  display: inline-block;
+  margin-bottom: 24px;
+}
+
+.catalog__description {
+  display: block;
+}
+
 @media (max-width: 1199px) {
   .catalog-block {
     -webkit-box-pack: center;
@@ -528,5 +548,77 @@ img {
   }
   .catalog-card {
     max-width: 470px;
+  }
+}
+
+.blog__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+.blog__title {
+  font-size: 24px;
+  font-family: "Proxima Nova Semibold", sans-serif;
+}
+
+.blog__link-more {
+  color: #507fe1;
+  font-size: 16px;
+}
+
+.blog-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.blog-list__image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.blog-list__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 80px;
+}
+
+.blog-list__card {
+  margin-bottom: 20px;
+}
+
+.blog-card {
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 1199px) {
+  .blog-list {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .blog__card {
+    margin-right: 30px;
+    margin-left: 30px;
   }
 }
