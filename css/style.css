@@ -783,3 +783,30 @@ img {
     width: 100%;
   }
 }
+
+.reviews-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.reviews-slider__item {
+  text-align: center;
+}
+
+.reviews-slider__image {
+  display: block;
+  width: 70px;
+  height: 70px;
+  border: 2px solid #6a99e9;
+  background-radius: 60%;
+  margin: 20px auto;
+}
+
+.reviews-slider__text {
+  font-size: 15px;
+  font-style: italic;
+}
