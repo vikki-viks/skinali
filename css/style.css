@@ -784,6 +784,10 @@ img {
   }
 }
 
+.reviews {
+  background-color: #f5f6f8;
+}
+
 .reviews-slider {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -807,6 +811,24 @@ img {
 }
 
 .reviews-slider__text {
+  position: relative;
   font-size: 15px;
   font-style: italic;
+  max-width: 370px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.reviews-slider__text:after {
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 10px;
+  border: 10px solid transparent;
+  border-top: 10px solid #fff;
 }
