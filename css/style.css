@@ -915,3 +915,21 @@ img {
     margin: auto;
   }
 }
+
+.questions__title {
+  font-size: 30px;
+  font-family: "Proxima Nova Semibold", sans-serif;
+}
+
+.questions-block {
+  max-width: 800px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
